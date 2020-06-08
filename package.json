@@ -1,0 +1,25 @@
+{
+  "name": "gulpfile",
+  "version": "2.2.0",
+  "description": "Gulp",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "i": "^0.3.6",
+    "ttf2woff2": "^3.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csslint": "^1.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-lint": "^1.4.0"
+  },
+  "scripts": {
+    "start": "node your-script.js"
+  },
+  "author": "User",
+  "license": "ISC"
+}

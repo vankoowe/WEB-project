@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Месарница</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="dist/css/receipts.css">
+		<style>
+			#more {display: none;}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1>Джолан</h1>
+				<div class="topnav">
+					<a href="index.html">За нас</a>
+					<a href="menu.html">Меню</a>
+					<a href="meat.html">Месо</a>
+					<a href="receipts.html">Рецепти</a>
+					<a href="#contacts">Контакти</a>
+					<a href="basket.html">
+						<img src="https://i0.wp.com/afriwestmedia.com/wp-content/uploads/2017/03/white-shopping-cart-icon.png?fit=300%2C300" alt="Кошница" width="30" height="30">
+					</a>
+				</div>
+			</div>			
+
+            <div class="receipts">
+				<div style="padding-bottom: 18px;">
+					<img src="https://gotvach.bg/files/lib/600x350/djolan-kartofi-photo1.jpg" alt="Гювеч със свински джолан">
+					<h1>Гювеч със свински джолан</h1>
+					<p>Необходими съставки :
+						<br>свински джолан - 1 бр. около 1 кг
+						<br>пиперки - 4 червени
+						<br>люти чушки - 2
+						<br>патладжани - 2 едри
+						<span id="dots">...</span><span id="more">
+						<br>моркови - 2 бр.
+						<br>лук - 2 глави кромид
+						<br>домати - 2 едри узрели
+						<br>картофи - ½ кг
+						<br>зелен боб - ½ кг
+						<br>бамя - 300 г ако има
+						<br>чесън - 1 глава
+						<br>целина - 1 връзка
+						<br>растително масло - ½ ч.ч.
+						<br>чубрица - 1 с.л. градинска
+						<br>майорана - 1 ч.л. или риган
+						<br>дафинови листа - 2 бр.
+						<br>черен пипер - 1 ч.л. смлян
+						<br>червен пипер - 1 ч.л. сладък
+						<br>червен пипер - 1 ч.л. пушен
+						<br>захар - 1 ч.л.
+						<br>сол
+						<br>
+						Начин на приготвяне :
+						<br>Джоланът се обезкостява, като месото се нарязва на хапки.
+						<br>Зеленият боб се почиства и шушулките се нарязват на две.
+						<br>Патладжаните и картофите се нарязват на едри кубчета.
+						<br>Пиперките и лукът се нарязват на едро, а морковите - на кръгчета.
+						<br>Лютите чушки и целината се нарязват на ситно, а скилидките
+						<br>чесън - на филийки. Всичко заедно с подправките, маслото и кокала на
+						<br>джолана се поставя в подходящ глинен съд с капак. Посолява се и се разбърква.
+						<br>Добавя се 1/2 ч.ч. вода. Пече се под капак във фурната 4 часа на 160 градуса.</span></p>
+					<p><button onclick="myFunction()" id="myBtn">Read more</button>
+				</div>
+
+			</div>
+
+			<script>
+			function myFunction() {
+				var dots = document.getElementById("dots");
+				var moreText = document.getElementById("more");
+				var btnText = document.getElementById("myBtn");
+				
+				if (dots.style.display === "none") {
+					dots.style.display = "inline";
+					btnText.innerHTML = "Read more"; 
+					moreText.style.display = "none";
+				} else {
+					dots.style.display = "none";
+					btnText.innerHTML = "Read less"; 
+					moreText.style.display = "inline";
+				}
+			}
+			</script>
+
+			<footer class="footer">
+				<p>© Иван Гамов</p>
+				<div class="instagramm">	
+					<a href="https://www.instagram.com/vankoowe/" target="_blank" class="in">
+						<img src="https://i.pinimg.com/originals/a2/5f/4f/a25f4f58938bbe61357ebca42d23866f.png" alt="Instagram" width="30" height="30">
+					</a>
+				</div>
+			</footer>
+		</div>
+
+		
+	</body>
+</html>
+
