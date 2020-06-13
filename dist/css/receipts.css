@@ -19,12 +19,50 @@ body, html {
   background-attachment: fixed; }
 
 .topnav a {
-  float: top;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 18px; }
+
+ul {
+  list-style: none;
+  padding: 0px; }
+
+ul li {
+  display: inline-block;
+  position: relative; }
+
+li ul {
+  display: none; }
+
+ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff; }
+
+li:hover > ul {
+  display: block;
+  position: absolute; }
+
+li:hover li {
+  float: none; }
+
+.main-navigation li ul li {
+  border-top: 0; }
+
+ul ul ul {
+  left: 100%;
+  top: 0; }
+
+ul:before, ul:after {
+  content: " ";
+  display: table; }
+
+ul:after {
+  clear: both; }
 
 .header {
   text-align: center;
@@ -37,7 +75,10 @@ body, html {
   flex-direction: row;
   align-items: center;
   max-width: 1200px;
-  margin: auto;
+  top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
   text-align: center;
   font-family: arial;
   padding: 30px;
