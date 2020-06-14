@@ -7,7 +7,6 @@ body,html {
 	height: 100%;
 	margin: 0;
 }
-
 .container {
 	display: flex;
 	flex-direction: column;
@@ -27,7 +26,7 @@ body,html {
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 18px;
-} 
+}
 
 ul {
 	list-style: none;
@@ -83,52 +82,53 @@ ul:after {
 	color: white;
 }
 
-.receipts {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	display:flex;
-	justify-content: center;
+.content{
+	display: flex;
 	flex-direction: row;
-	align-items: center;
-	max-width: 1200px;
-	top: 120px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 100px;
-	text-align: center;
-	font-family: arial;
-	padding: 30px;
-	position: relative
+	flex-wrap: wrap;
+	flex: 1;
+	position: relative;
+	margin : 180px auto 0 ;
 }
 
-.receipts div:nth-child(odd){
-	margin-right: 15px;
+.contact_list {
+	display: flex;
+	flex-direction: row;
+	font-size: 25px;
 }
 
-.receipts div img {
-	object-fit: contain;
-	width: 200px;
-	height: 200px;
+.contact_email, .contact_phone, .contact_address {
+	margin-top: 25px;
+	padding: auto 0;
 }
 
-.price {
-	color: white;
-	font-size: 22px;
+.mapWrapper {
+	position: relative;
+	top: 130px;
 }
-  
-.receipts button {
-	border: none;
-	outline: 0;
-	padding: 12px;
-	color: white;
-	background-color: #000;
-	text-align: center;
-	cursor: pointer;
-	width: 100%;
-	font-size: 18px;
+
+@media (max-width: 600px) {
+	.mapWrapper {
+		position: relative;
+		padding-bottom: 66.6666667%;
+		height: 0;
+		top: 130px;
+	}
+	.mapWrapper iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 }
-  
-.receipts button:hover {
-	opacity: 0.7;
+
+.overlay {
+   background:transparent;
+   position:relative;
+   width:100%;
+   height:100%;
+   z-index: 1;
 }
 
 .footer {

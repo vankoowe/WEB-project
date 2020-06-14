@@ -7,7 +7,6 @@ body,html {
 	height: 100%;
 	margin: 0;
 }
-
 .container {
 	display: flex;
 	flex-direction: column;
@@ -27,7 +26,7 @@ body,html {
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 18px;
-} 
+}
 
 ul {
 	list-style: none;
@@ -83,52 +82,32 @@ ul:after {
 	color: white;
 }
 
-.receipts {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	display:flex;
-	justify-content: center;
+.content{
+	display: flex;
 	flex-direction: row;
-	align-items: center;
-	max-width: 1200px;
-	top: 120px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 100px;
-	text-align: center;
-	font-family: arial;
-	padding: 30px;
-	position: relative
+	flex-wrap: wrap;
+	flex: 1;
+	position: relative;
+	margin : 120px auto 0 ;
 }
 
-.receipts div:nth-child(odd){
-	margin-right: 15px;
-}
-
-.receipts div img {
-	object-fit: contain;
-	width: 200px;
-	height: 200px;
-}
-
-.price {
-	color: white;
-	font-size: 22px;
-}
-  
-.receipts button {
-	border: none;
-	outline: 0;
-	padding: 12px;
-	color: white;
-	background-color: #000;
-	text-align: center;
-	cursor: pointer;
+.info {
+	display: block;
+	position: relative;
+	margin-right: 50px;
 	width: 100%;
+	max-width: 800px;
+	float: left;
 	font-size: 18px;
 }
-  
-.receipts button:hover {
-	opacity: 0.7;
+
+.plus-info {
+	display: block;
+	position: relative;
+	width: 100%;
+	max-width: 800px;
+	font-size: 18px;
+	margin: auto;
 }
 
 .footer {
